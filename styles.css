@@ -1,0 +1,1262 @@
+
+img {
+    max-width: 100%;
+}
+
+
+
+h1, h2, h3 {
+    font-family: 'Roboto Slab', serif;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
+p.thick {
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    clear: both;
+
+}
+
+.menu p.thick {
+  line-height: 1px;
+}
+
+.form-container p.thick {
+  line-height: 1px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.hero {
+    width: 100%;
+    background-image: url("Oven-2-Cropped.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    float: left;
+    clear: both;
+}
+
+
+@media only screen and (min-width: 600px) {
+  .hero { 
+    min-height: 350px; 
+  }
+}
+
+/*  The following would be an easy way - if I needed to do so - to make the the nav/hero section, including the background image, longer or shorter when you reach mobile dimensions. I conclude that the same height is needed either way*/
+
+@media only screen and (max-width: 600px) {
+  .hero { 
+    height: 350px; 
+    background-size: cover;
+    background-image: url("Oven-2-Cropped.jpg");
+  }
+}
+
+/* The following is a navbar section for laptop / desktop.*/
+
+.navbar {
+    width: 90%;
+    height: 20px; 
+    margin: auto;
+    margin-top: 25px;
+    position: relative;
+    padding-top: 0px;
+}
+
+.navlogo {
+    float: left;
+    margin-top: 25px;
+    height: 20px;
+    width: 20%;
+    padding-top: 0px;
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
+
+.navbarright {
+    float: right;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-left: 0px;
+    padding: 0px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin-right: 20px;
+    margin-top: 25px;
+}
+
+.navbar li {
+    min-height: 20px;
+    display: inline;
+    float: right;
+    padding-top: 0px;
+    margin-top: 0px;
+}
+
+.hover {
+    width: 120px;
+    max-height: 10px;
+    position: relative;
+    margin-left: 15px;
+}
+
+.hover .img-link {
+    position: absolute;
+}
+
+.hover:hover .img-link {
+    display: none;
+}
+
+.hover .img-hover {
+    position: absolute;
+    display: none;
+}
+
+.hover:hover .img-hover {
+    display: inline;
+}
+
+
+/* The following is an attempt at an alternative way to approach the problem of the basket by taking it out of the ul.*/
+
+
+.desktop-basket {
+  margin-top: 25px;
+  float: right;
+  width: 30px;
+  height: 30px;
+}
+
+.desktop-basket:hover .img-link {
+  display: none;
+}
+
+.desktop-basket .img-hover {
+  display: none;
+}
+
+
+.basket {
+  width: 40px;
+  height: 40px;
+}
+
+
+
+/* This is to make the desktop-orientated navbar section disappear when you zoom.*/
+
+
+@media only screen and (max-width: 1100px) {
+    .navbar { 
+      display: none;
+    }
+  }
+
+
+/*  That following is to make the mobile nav section appear only when you reach mobile dimensions.*/
+
+
+@media only screen and (max-width: 1100px) {
+    .mobilenav { 
+      display: block;
+    }
+  }
+
+  @media only screen and (min-width: 1100px) {
+    .mobilenav { 
+      display: none;
+    }
+  }
+
+
+/*  And here I plan to use the same CSS to make the hamburger and menu icons change. The thing is that I need to give them a class of div - not "hover" as above, but something else.*/
+
+.hovermobile .img-link {
+    position: absolute;
+}
+
+.hovermobile:hover .img-link {
+    display: none;
+}
+
+.hovermobile .img-hover {
+    position: absolute;
+    display: none;
+}
+
+.hovermobile:hover .img-hover {
+    display: inline;
+}
+
+
+/*  And that completes the CSS for the navbar on mobile devices.*/
+
+
+.mobilenav {
+    padding-top: 50px;
+    position: relative;
+    margin: auto;
+    width: 80%;
+    min-height: 10px;
+}
+ 
+  .mobilenav-left {
+    width: 5%;
+    float: left;
+  }
+  
+  .mobilenav-right {
+    float: right;
+    width: 5%;
+  }
+
+  .mobilenav-middle {
+    width: 40%;
+    float: left;
+    margin-left: 25%
+  }
+
+/* That completes the code for the mobile navbar*/
+
+.hero h1 {
+  color: white;
+  text-align: center;
+  padding: 12px;
+}
+
+.hero h2 {
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+
+.hero-container {
+    clear: both;
+    width: 80%;
+    min-height: 200px; 
+    margin: auto;
+    margin-top: 300px;
+    margin-bottom: 25px;
+}  
+
+/*The following section makes the hero-container's margin-top to be much smaller if on a mobile.*/
+
+@media only screen and (max-width: 600px) {
+  .hero-container { 
+    margin-top: 100px;
+  }
+}
+
+
+
+
+.hero-selling-point {
+  /*background-color: #088283;*/
+  margin: auto;
+  width: 100%;
+  min-height: 75px;
+}
+
+@media only screen and (max-width: 600px) {
+  .hero-selling-point { 
+    width: 100%;
+  }
+}
+
+
+
+.hero-order {
+  background-color: #a7093c;
+  margin: auto;
+  border-radius: 8px;
+  min-height: 65px;
+  max-width: 40%;
+  
+}
+
+
+
+.hero-order:hover {
+  background-color: #088283;
+}
+
+
+/*or maybe the dark read which is #80003f*/
+
+@media only screen and (max-width: 600px) {
+  .hero-order { 
+    width: 30%;
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
+  .hero-order { 
+  clear: both;
+  margin: auto;
+  width: 100%;
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
+  .hero-special-offers { 
+  clear: both;
+  margin: auto;
+  width: 100%;
+  }
+}
+
+
+/*  CSS for the Menu section starts here.*/
+
+.menu {
+    width: 100%;
+    min-height: 300px;  
+    background-color: #fbf0de;
+    float: left;
+    clear: both;
+}
+
+.menu h3 {
+    color: black;
+    text-align: center;
+}
+
+
+.menu h2 {
+  color: #a7093c;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.menucontainer {
+    width: 80%;
+    min-height: 200px; 
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    display: table;
+}  
+
+
+/*  This makes the menu-desktop section appear at laptop width, and disappear at mobile-device width.*/
+
+@media only screen and (min-width: 600px) {
+  .menu-desktop { 
+    display: block;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .menu-desktop { 
+    display: none;
+    width: 100%;
+  }
+}
+
+
+/*  This makes the menu-accordion-for-mobile section appear at mobile-device width and disappear at laptop width.*/
+
+@media only screen and (max-width: 600px) {
+  .menu-accordion-for-mobile { 
+    display: block;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .menu-accordion-for-mobile { 
+    display: none;
+    width: 100%;
+  }
+}
+
+
+
+
+.menucolumn {
+  width: 33.33%;
+  min-height: 100px; 
+  float: left;
+  display: table-cell;
+}
+
+.menucolumn p {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+
+/*  Having concluded that the above two responsive solutions deliver the goods, I'm commenting the following out. But as you can see, it was a solution that made the 3 columns of the menu appear one after the other, as opposed to appearing in three parallel columns, taking up 1/3 of the horizontal space each. In any case, I use a responsive solution like this in the AboutUs section.
+
+@media only screen and (max-width: 600px) {
+    .menucolumn { 
+      display: block;
+      width: 100%;
+    }
+  }
+
+  */
+
+.menuheading {
+    padding-bottom: 10px;
+  }
+
+  .menuparagraph {
+    padding-left: 10px;
+  }
+
+  .menu-item {
+padding-bottom: 45px;
+  }
+
+p.alignleft {
+  float: left;
+  line-height: 1px;
+}
+
+p.alignright {
+  float: right;
+  line-height: 1px;
+}
+
+.textbox {
+  padding: 0px;
+  margin: 0px;
+}
+
+p.details {
+  margin-bottom: 0px;
+}
+
+.product-name {
+  color: #a7093c;
+}
+
+
+
+/*This is the code for the Accordion version of the menu, which is active at Mobile width.*/
+
+.menu-accordion {
+  background-color: #fbf0de;
+  color: black;
+  cursor: pointer;
+  padding: 15px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  transition: 0.4s;
+  display: inline;
+  font-family: 'Roboto Slab', serif;
+  font-size: 20px;
+}
+
+
+.active, .menu-accordion:hover {
+  background-color: #fbf0de;
+  color: #a7093c;
+}
+
+
+.menu-accordion:after {
+  content: '\002B';
+  color: #a7093c;
+  font-weight: bold;
+  float: right;
+
+}
+
+
+.menu-accordion.active:after {
+  content: "\2212";
+  color: #a7093c;
+}
+
+.menu-accordion {
+text-align: center;
+}
+
+.menu-accordion .product-name p {
+  line-height: 1px;
+  }
+
+.menupanel {
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #fbf0de;
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height 1s ease-out;
+  color: black;
+}
+
+
+.menupanel p {
+  margin-bottom: 20px;
+  margin-right: 15px;
+}
+
+
+.menu-accordion .menu-column {
+padding-top: 15px;
+
+}
+
+/* And that concludes the code for the mobile menu*/
+
+
+
+/*  CSS for the Reviews section starts here.*/
+
+.reviews {
+    width: 100%;
+    min-height: 100px; 
+    background-color: #088283;
+    float: left;
+}
+
+.reviewscontainer {
+    width: 80%;
+    min-height: 100px; 
+    margin: auto;
+    margin-top: 35px;
+    margin-bottom: 35px;
+
+}  
+
+/*  No CSS needed for the quote slideshow*/
+
+
+
+/*  This was some Nav stuff - it works just fine, but I've moved it up to the top. I'm commenting this out now so that I can see if it's working up top. 
+
+.column 
+{
+    height: 300px;
+  }
+  
+  .left 
+  {
+    width: 5%;
+    float: left;
+  }
+  
+  .right 
+  {
+    float: right;
+    width: 5%;
+  }
+
+  .middle {
+    width: 40%;
+    float: left;
+    margin-left: 25%
+  }
+
+*/
+
+
+/*  CSS for the About Us section starts here.*/
+
+
+.aboutus {
+    width: 100%;
+    min-height: 300px; 
+    background-color: #fbf0de;
+    float: left;
+}
+
+/*  
+.aboutus h2, p {
+    color: black;
+
+}
+*/
+
+.staffcontainer {
+    width: 80%;
+    min-height: 200px; 
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    display: table;
+}  
+
+
+/*  The following is the layout for the image on left, text on right. I give both a float left. There's a margin-bottom of 25px, pushing the next set of image/text further down, so that the user knows which text & element go together hence achieving "proximity" between photo and text. When this layout responds for mobile devices, I give the image a margin-bottom of 0px, and then I give the text a margin-bottom of 25px - again, making sure that image and text are adjacent and pushing the next image/text combo further away.*/
+
+.staffcolumnimage-left {
+  width: 33.33%;
+  float: left;
+  clear: both;
+  padding-top: 25px;
+  margin-bottom: 25px;
+  }
+  
+  
+  @media only screen and (max-width: 600px) {
+    .staffcolumnimage-left { 
+      display: block;
+      width: 100%;
+      padding-top: 0px;
+      margin-bottom: 0px;
+    }
+  }
+  
+  .staffcolumntext-right {
+  width: 66.66%;
+  min-height: 100px; 
+  float: left;
+  }
+
+.staffcolumntext-right p {
+  margin-left: 8%;
+  margin-right: 0px;
+  }
+
+.staffcolumntext-right h2 {
+  color: #a7093c;
+  text-align: left;
+  margin-left: 8%;
+  margin-right: 0px;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .staffcolumntext-right { 
+      display: block;
+      width: 100%;
+      margin-bottom: 35px;
+    }
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .staffcolumntext-right p { 
+      margin-left: 0px;
+      padding-left: 0px;
+    }
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .staffcolumntext-right h2 { 
+      margin-left: 0px;
+      padding-left: 0px;
+    }
+  }
+
+  
+  /*  The following is the vice versa layout - text on left, image on right. I give these a float of right, and then when it responds for mobile devices, I make sure that there's no gap between image and text - */
+  
+  
+    
+  .staffcolumntext-left {
+    width: 62.66%;
+    min-height: 100px; 
+    float: right;
+    padding-right: 4%;
+    }
+  
+  .staffcolumntext-left p {
+    margin-right: 2%;
+    margin-left: 0px;
+    }
+
+  .staffcolumntext-left h2 {
+    color: #a7093c;
+    margin-right: 2%;
+    margin-left: 0px;
+    text-align: left;
+    }
+  
+    @media only screen and (max-width: 600px) {
+      .staffcolumntext-left { 
+        display: block;
+        width: 100%;
+        margin-bottom: 35px;
+        padding-right: 0px;
+      }
+    }
+  
+  .staffcolumnimage-right {
+    width: 33.33%;
+    float: right;
+    padding-top: 25px;
+    margin-bottom: 30px;
+    clear: both;
+    }
+    
+    
+  
+    @media only screen and (max-width: 600px) {
+      .staffcolumnimage-right { 
+        display: block;
+        width: 100%;
+        padding-top: 0px;
+        margin-bottom: 0px;
+      }
+    }
+  
+    /* 
+    .staffcolumntext-left h2, h1, p {
+    color: white;
+    padding: 10px;
+    }
+
+
+*/
+
+
+/*  CSS for the Slideshow section starts here.*/
+
+.slideshow {
+    width: 100%;
+    min-height: 300px; 
+    background-color: #088283;
+    float: left;
+}
+
+.slideshow-container {
+    width: 80%;
+    min-height: 200px; 
+    margin: auto;
+    margin-top: 70px;
+    margin-bottom: 50px;
+}  
+
+/*  CSS code for the slider goes here.*/
+
+.slideshow-code {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+
+  .next {
+    right: 0;
+    border-radius: 30px 0px 0px 30px;
+  }
+
+  .prev {
+    left: 0;
+    border-radius: 0px 30px 30px 0px;
+  }
+
+
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: #088283;
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color:  #00584d;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #fbf0de;
+  }
+  
+
+ 
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+
+/*  CSS for the FAQ section starts here.*/
+
+.faq {
+    width: 100%;
+    min-height: 300px; 
+    background-color: #fbf0de;
+    float: left;
+}
+
+.faqcontainer {
+    width: 80%;
+    min-height: 200px; 
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}  
+
+.faq h2 {
+  text-align: center;
+  color: #a7093c;
+  margin-top: 50px;
+}
+
+/*This is the accordion section for the faq.*/
+
+.accordion {
+    background-color: #fbf0de;
+    color: black;
+    cursor: pointer;
+    padding: 15px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+    display: inline;
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+  }
+  
+  
+  .active, .accordion:hover {
+    background-color: #fbf0de;
+    color: #a7093c;
+  }
+  
+  
+  .accordion:after {
+    content: '\002B';
+    color: black;
+    font-weight: bold;
+    float: right;
+    margin-right: 10px;
+  }
+  
+  
+  .faq .active:after {
+    content: "\2212";
+    color: #a7093c;
+  }
+  
+
+  .panel {
+    padding-left: 15px;
+    background-color: #fbf0de;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out;
+    color: black;
+  }
+  
+  .panel p {
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
+
+/*  CSS for the Work With Us section starts here.*/
+
+
+.workwithus {
+    width: 100%;
+    min-height: 300px; 
+    background-color: #088283;
+    float: left;
+    clear: both;
+}
+
+.workwithus p{
+    color: #fbf0de;
+}
+
+.workwithus h2 {
+  color: #fbf0de;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.workwithus h3 {
+  color: #fbf0de;
+}
+
+.workwithuscontainer {
+    width: 80%;
+    min-height: 200px; 
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}  
+
+/* Here is CSS for the form */
+
+.form-container p {
+  color: #088283;
+}
+
+input[type=text], select, textarea {
+  width: 90%;
+  padding: 12px;
+  border: 1px solid #088283;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+
+/* 
+label {
+  padding: 12px;
+  display: inline-block;
+}
+*/
+
+
+/* Responsive layout - when the screen is more than 600px wide, aligning the label div on the horizontal axis*/
+@media screen and (min-width: 600px) {
+  .label {
+    padding-left: 12px;
+    margin-top: 30px;
+    display: inline-block;
+  }
+}
+
+
+/* Responsive layout - when the screen is more than 600px wide, aligning the label div on the vertical axis */
+
+@media screen and (max-width: 600px) {
+  .label {
+    padding-left: 0px;
+    padding-top: 20px;
+    padding-bottom: 12px;
+    display: inline-block;
+  }
+}
+
+
+input[type=submit] {
+  clear: both;
+  font-family: 'Roboto Slab', serif;
+  background-color: #a7093c;
+  color: white;
+  margin-top: 15px;
+  margin-right: 6%;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  max-width: 200px;
+}
+
+
+input[type=submit]:hover {
+  background-color: #80003f;
+}
+
+
+
+.form-container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  padding-top: 10px;
+}
+
+
+
+.col-75 {
+  float: right;
+  width: 75%;
+  margin-top: 6px;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Clear floats after the columns */
+
+
+.center {
+
+  margin: auto;
+  width: 30%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-75, input[type=submit] {
+    width: 100%;
+    padding-bottom: 20px;
+  }
+}
+
+/* Responsive layout*/
+@media screen and (max-width: 600px) {
+  .col-25 {
+    width: 100%;
+  }
+}
+
+
+
+
+
+/*  CSS for the bottom-nav section starts here.*/
+
+.bottom-nav {
+  width: 100%;
+  min-height: 300px;
+  background-color: #fbf0de;
+  float: left;
+}
+
+
+.bottom-nav-container {
+  position: relative;
+  margin: auto;
+  width: 80%;
+  min-height: 30px;
+  background-color:#fbf0de;
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+
+
+.bottom-nav h2{
+  text-decoration: none;
+  text-align: center;
+  color: white;
+}
+
+                
+.vertical-nav-item {
+  background-color: #a7093c;
+  margin: auto;
+  color: white;
+  text-decoration: none;
+  min-height: 65px;
+  max-width: 40%;
+  margin-bottom: 15px;
+  padding: 1px;
+  border-radius: 8px;
+}
+
+.vertical-nav-item:hover {
+  background-color: #088283;
+}
+
+/* or maybe the darker red which was ##0003f */
+/* or maybe the darker green which was #00584d */
+
+
+
+
+.vertical-nav-item a {
+  text-decoration: none;
+}
+
+
+/*  CSS for the Footer  section starts here.*/
+
+.footer {
+    width: 100%;
+    min-height: 120px; 
+    background-color: #5d5d5d;
+    float: left;
+}
+
+.footer-container {
+    background-color: none;
+    margin: auto;
+    width: 80%;
+    min-height: 120px;
+    padding-top: 25px;
+}
+
+
+.social-media-icons {
+  width: 30%;
+  min-height: 70px;
+  margin: auto;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .social-media-icons { 
+    width: 50%;
+    min-height: 50px;
+    margin: auto;
+  }
+}
+
+
+ 
+.social-media-icons-left {
+  
+  width: 25%;
+  float: left;
+  height: 50px;
+  background-image: url("twitter-icon-white-on-grey.png");
+  background-repeat: no-repeat;
+  background-size: 70%;
+  Background-position: center;
+  transition: .6s;
+  cursor: zoom-in;
+}
+
+  .social-media-icons-left:hover {
+  background-size: 100%;
+  background-position: center;
+}
+
+
+.social-media-icons-middle {
+  
+  width: 25%;
+  float: left;
+  margin-left: 13%;
+  height: 50px;
+  background-image: url("facebook-icon-white-on-grey.png");
+  background-repeat: no-repeat;
+  background-size: 70%;
+  Background-position: center;
+  transition: .6s;
+  cursor: zoom-in;
+}
+
+  .social-media-icons-middle:hover {
+  background-size: 100%;
+  background-position: center;
+}
+
+
+
+
+.social-media-icons-right {
+  
+  width: 25%;
+  float: right;
+  height: 50px;
+  background-image: url("instagram-icon-white-on-grey.png");
+  background-repeat: no-repeat;
+  background-size: 70%;
+  Background-position: center;
+  transition: .6s;
+  cursor: zoom-in;
+}
+
+  .social-media-icons-right:hover {
+  background-size: 100%;
+  background-position: center;
+}
+
+
+/*  Copying formatting from the social mediav*/
+
+
+.contact-details-container {
+  clear: both;
+  padding-top: 5px;
+  width: 100%;
+  margin: auto;
+  height: 100px;
+}
+ 
+.contact-details-left {
+  width: 30%;
+  float: left;
+  text-align: center;
+}
+
+
+.contact-details-middle {
+  width: 30%;
+  float: left;
+  margin-left: 5%;
+  text-align: center;
+}
+
+
+.contact-details-right {
+  width: 30%;
+  float: right;
+  text-align: center;
+}
+
+.footer p{
+  color: white;
+}
+
+/*  that worked fine*/
+
+
+
+
+
+
